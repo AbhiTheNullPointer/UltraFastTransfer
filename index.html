@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Ultra Fast Transfer - Fast local file sharing for Android</title>
+    <meta
+      name="description"
+      content="Transfer from Android at up to 42 MB/s (336 Mbps) over local Wi-Fi. Send to a Mac, iPhone, iPad, or PC; the receiver only needs a browser."
+    />
+    <meta property="og:title" content="Ultra Fast Transfer - Fast local file sharing for Android" />
+    <meta
+      property="og:description"
+      content="Transfer from Android at up to 42 MB/s (336 Mbps) over local Wi-Fi. Send to a Mac, iPhone, iPad, or PC; the receiver only needs a browser."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abhithenullpointer.github.io/UltraFastTransfer/" />
+    <meta property="og:image" content="https://abhithenullpointer.github.io/UltraFastTransfer/icon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ultra Fast Transfer - Fast local file sharing for Android" />
+    <meta
+      name="twitter:description"
+      content="Transfer from Android at up to 42 MB/s (336 Mbps) over local Wi-Fi. Send to a Mac, iPhone, iPad, or PC; the receiver only needs a browser."
+    />
+    <meta name="theme-color" content="#4355B9" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('uft-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FAFAFF] text-[#1A1B22] dark:bg-[#111318] dark:text-[#E3E4E8] antialiased selection:bg-[#DEE0FF] selection:text-[#00006E] dark:selection:bg-[#4355B9]/40 dark:selection:text-[#E3E4E8]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
